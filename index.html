@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -29,17 +30,198 @@
     <main>
         <div class="content">
             <div class="info">
+                <p id="name_para">Hello, It's Me </p>
                 <h2 id="name">Pratik Maurya</h2>
-                <p id="name_para">Frontend Developer</p>
+                <p id="name_para">And I'm a <span class="text"></span></p>
+                <p id="intro"> I am pratik Maurya , I am a web Developer , works on many projects I am pratik Maurya , I
+                    am a web Developer , works on many projectsI am pratik Maurya , I am a web Developer , works on many
+                    projectsI am pratik Maurya , I am a web Developer , works on many projects</p>
+                <button id="btn1">More about me</button>
+                <i class="fa-solid fa-arrow-right"></i>
             </div>
-            <div class="photo">
+            <div class="photo"> </div>
+        </div>
+        .
+        <hr style="margin-top: 5%;">
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="#">
+
             </div>
-        </div>
-        .<hr style="margin-top: 5%;">
-        <div class="about">
-            
-        </div>
+            <div class="about-text">
+                <h2>About<span>Me</span></h2>
+                <h4>Full Stack Developer</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit officia quam doloremque enim,
+                    praesentium repudiandae, explicabo obcaecati deleniti, nobis iure laudantium autem corporis?
+                    Repellendus dolores soluta fugit dicta vero amet.
+                    Fugiat, laboriosam necessitatibus, est odit inventore deleniti ea impedit quaerat repellendus
+                    voluptate recusandae dicta nesciunt doloremque vel ipsa? Quis architecto recusandae aliquid alias
+                    expedita adipisci voluptate dolores, numquam minus voluptas?</p>
+                <button id="btn2">More about me</button>
+            </div>
+        </section>
+        <section>
+            <div class="services" id="services">
+                <div class="container">
+                    <h1 class="sub-tittle"> My <span>Services</span></h1>
+                    <div class="service-list">
+                        <div>
+                            <i class="fa-solid fa-code fa-xl" style="color: #74C0FC;"></i>
+                            <h2>UI/UX Design </h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod perferendis excepturi at,
+                                quo optio temporibus est in ipsum dignissimos qui odit? Nulla dolorum maxime id facere
+                                et earum magnam obcaecati?7</p>
+                            <button id="btn3"> learn more </button>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-web-awesome fa-2xl" style="color: #74C0FC;"></i>
+                            <h2>UI/UX Design </h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod perferendis excepturi at,
+                                quo optio temporibus est in ipsum dignissimos qui odit? Nulla dolorum maxime id facere
+                                et earum magnam obcaecati?7</p>
+                            <button id="btn3"> learn more </button>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-cloud fa-xl" style="color: #74C0FC;"></i>
+                            <h2>UI/UX Design </h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod perferendis excepturi at,
+                                quo optio temporibus est in ipsum dignissimos qui odit? Nulla dolorum maxime id facere
+                                et earum magnam obcaecati?7</p>
+                            <button id="btn3"> learn more </button>
+                        </div>
+
+                    </div>
+                    <div class="service-list">
+                        <div>
+                            <i class="fa-solid fa-code fa-xl" style="color: #74C0FC;"></i>
+                            <h2>UI/UX Design </h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod perferendis excepturi at,
+                                quo optio temporibus est in ipsum dignissimos qui odit? Nulla dolorum maxime id facere
+                                et earum magnam obcaecati?7</p>
+                            <button id="btn3"> learn more </button>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-web-awesome fa-2xl" style="color: #74C0FC;"></i>
+                            <h2>UI/UX Design </h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod perferendis excepturi at,
+                                quo optio temporibus est in ipsum dignissimos qui odit? Nulla dolorum maxime id facere
+                                et earum magnam obcaecati?7</p>
+                            <button id="btn3"> learn more </button>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-apple fa-xl" style="color: #74C0FC;"></i>
+                            <h2>UI/UX Design </h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod perferendis excepturi at,
+                                quo optio temporibus est in ipsum dignissimos qui odit? Nulla dolorum maxime id facere
+                                et earum magnam obcaecati?7</p>
+                            <button id="btn3"> learn more </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h1 class="sub-tittle"> My <span>Services</span></h1>
+        <section id="section">
+            <div class="container1" id="skills">
+                <h1 class="heading1">Technical Skills</h1>
+                <div class="Technical-bars">
+                    <div class="bar"><i class="fa-brands fa-html5" style="color: #74C0FC;"></i>
+                        <div class="info1">
+                            <span>HTML</span>
+                        </div>
+                        <div class="progress-line html">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar"><i class="fa-brands fa-css3-alt" style="color: #74C0FC;"></i>
+                        <div class="info1">
+                            <span>CSS</span>
+                        </div>
+                        <div class="progress-line css">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar"><i class="fa-brands fa-js" style="color: #74C0FC;"></i>
+                        <div class="info1">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="progress-line JavaScript">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar"><i class="fa-brands fa-python" style="color: #74C0FC;"></i>
+                        <div class="info1">
+                            <span>Python</span>
+                        </div>
+                        <div class="progress-line Python">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info1"><i class="fa-brands fa-react" style="color: #74C0FC;"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="progress-line React">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container1">
+                <h1 class="heading1">Professional Skills</h1>
+                <div class="circle-box">
+                    <div class="radlal-bar">
+                        <div class="outer-line">
+                            <div class="circle">
+
+                            </div>
+                        </div>
+                        <div class="percentage">90%</div>
+                        <div class="text1">Creativity</div>
+                    </div>
+                    <div class="radlal-bar">
+                        <div class="outer-line">
+                            <div class="circle">
+
+                            </div>
+                        </div>
+                        <div class="percentage">65%</div>
+                        <div class="text1">Communication</div>
+                    </div>
+                </div>
+                <div class="circle-box">
+                <div class="radlal-bar">
+                    <div class="outer-line">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+                    <div class="percentage">85%</div>
+                    <div class="text1">Problem Solving</div>
+                </div>
+                <div class="radlal-bar">
+                    <div class="outer-line">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+                    <div class="percentage">80%</div>
+                    <div class="text1">Team work</div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <div class="box1">
+        <span class="box2">
+
+        </span>
+    </div>
+        
+        <div class="box3"></div>
+        <div class="box4"></div>
     </main>
+    <script src="main.js"></script>
 </body>
 
 </html>
