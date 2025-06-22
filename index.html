@@ -13,17 +13,17 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <nav id="nav">
             <a class="navbar" href="#">Home</a>
-            <a class="navbar" href="#">Skills</a>
-            <a class="navbar" href="#">About</a>
-            <a class="navbar" href="#">Recent Works</a>
-            <a class="navbar" href="#">Get IN Touch</a>
+            <a class="navbar" href="#m-skill">Skills</a>
+            <a class="navbar" href="#about">About</a>
+            <a class="navbar" href="#services">Recent Works</a>
+            <a class="navbar" href="#contectUs">Get IN Touch</a>
             <social id="scl">
-                <i class="fa-brands fa-linkedin fa-xl"></i>
-                <i class="fa-brands fa-instagram fa-xl"></i>
-                <i class="fa-solid fa-x fa-xl"></i>
+                <a href="https://www.linkedin.com/in/pratik22"> <i class="fa-brands fa-linkedin fa-xl"></i></a>
+                <a href=""> <i class="fa-brands fa-instagram fa-xl"></i></a>
+                <a href=""> <i class="fa-solid fa-x fa-xl"></i></a>
             </social>
         </nav>
     </header>
@@ -33,9 +33,9 @@
                 <p id="name_para">Hello, It's Me </p>
                 <h2 id="name">Pratik Maurya</h2>
                 <p id="name_para">And I'm a <span class="text"></span></p>
-                <p id="intro"> I am pratik Maurya , I am a web Developer , works on many projects I am pratik Maurya , I
-                    am a web Developer , works on many projectsI am pratik Maurya , I am a web Developer , works on many
-                    projectsI am pratik Maurya , I am a web Developer , works on many projects</p>
+                <p id="intro">I’m currently pursuing my Bachelor's in Computer Applications (BCA) and have a strong
+                    foundation in web development. Over time, I've gained hands-on experience with technologies like
+                    HTML, CSS, JavaScript, React Native, Java, C++ and C, and more.</p>
                 <button id="btn1">More about me</button>
                 <i class="fa-solid fa-arrow-right"></i>
             </div>
@@ -121,7 +121,7 @@
             </div>
         </section>
 
-        <h1 class="sub-tittle"> My <span>Services</span></h1>
+        <h1 class="sub-tittle"> My <span id="m-skill">Skills</span></h1>
         <section id="section">
             <div class="container1" id="skills">
                 <h1 class="heading1">Technical Skills</h1>
@@ -172,54 +172,72 @@
                 <h1 class="heading1">Professional Skills</h1>
                 <div class="circle-box">
                     <div class="radlal-bar">
-                        <div class="outer-line">
-                            <div class="circle">
-
-                            </div>
-                        </div>
+                        <svg width="110" height="110" class="skill-circle">
+                            <circle cx="55" cy="55" r="50" stroke="#181a1a" stroke-width="10" fill="none" />
+                            <circle class="progress" data-percentage="90" cx="55" cy="55" r="50" stroke="aqua"
+                                stroke-width="5" fill="none" />
+                        </svg>
                         <div class="percentage">90%</div>
                         <div class="text1">Creativity</div>
                     </div>
                     <div class="radlal-bar">
-                        <div class="outer-line">
-                            <div class="circle">
-
-                            </div>
-                        </div>
+                        <svg width="110" height="110" class="skill-circle">
+                            <circle cx="55" cy="55" r="50" stroke="#181a1a" stroke-width="10" fill="none" />
+                            <circle class="progress" data-percentage="65" cx="55" cy="55" r="50" stroke="aqua"
+                                stroke-width="5" fill="none" />
+                        </svg>
                         <div class="percentage">65%</div>
                         <div class="text1">Communication</div>
                     </div>
                 </div>
                 <div class="circle-box">
-                <div class="radlal-bar">
-                    <div class="outer-line">
-                        <div class="circle">
-
-                        </div>
+                    <div class="radlal-bar">
+                        <svg width="110" height="110" class="skill-circle">
+                            <circle cx="55" cy="55" r="50" stroke="#181a1a" stroke-width="10" fill="none" />
+                            <circle class="progress" data-percentage="85" cx="55" cy="55" r="50" stroke="aqua"
+                                stroke-width="5" fill="none" />
+                        </svg>
+                        <div class="percentage">85%</div>
+                        <div class="text1">Problem Solving</div>
                     </div>
-                    <div class="percentage">85%</div>
-                    <div class="text1">Problem Solving</div>
-                </div>
-                <div class="radlal-bar">
-                    <div class="outer-line">
-                        <div class="circle">
-
-                        </div>
+                    <div class="radlal-bar">
+                        <svg width="110" height="110" class="skill-circle">
+                            <circle cx="55" cy="55" r="50" stroke="#181a1a" stroke-width="10" fill="none" />
+                            <circle class="progress" data-percentage="80" cx="55" cy="55" r="50" stroke="aqua"
+                                stroke-width="5" fill="none" />
+                        </svg>
+                        <div class="percentage">80%</div>
+                        <div class="text1">Team work</div>
                     </div>
-                    <div class="percentage">80%</div>
-                    <div class="text1">Team work</div>
-                </div>
                 </div>
             </div>
         </section>
-        <div class="box1">
-        <span class="box2">
+        <!-- my Skills end -->
+        <!-- contect  us start -->
 
-        </span>
-    </div>
-        
-        <div class="box3"></div>
-        <div class="box4"></div>
+        <section>
+            <div id="contectUs">
+                <h1>Contect<span>Us</span></h1>
+            </div>
+            <h3 id="g-touch">Get in Touch</h3>
+            <div id="contect-main">
+                <div id="cnt-img">
+                    <img src="./Images/imgss.jpg" alt="Image">
+                </div>
+                <div id="cnt-form">
+                    <div id="name">
+                        <input type="text" placeholder="Your Name">
+                    </div>
+                    <div id="email">
+                        <input type="text" placeholder="Your Email">
+                    </div>
+                    <div id="message">
+                        <textarea type="text" rows="10" cols="20" placeholder="Your Message"></textarea>
+                    </div>
+                    <button id="submit-btn">SEND YOUR MESSAGE</button>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="main.js"></script>
 </body>
