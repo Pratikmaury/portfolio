@@ -20,7 +20,7 @@ body {
     background-color: rgb(34, 33, 33);
     padding: 2%;
     border-radius: 20px;
-    box-shadow: 0px 0px 50px rgb(55, 182, 255);
+    box-shadow: 0px 0px 10px aqua;
 }
 
 header {
@@ -33,7 +33,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: rgb(55, 182, 255);
+    color: aqua;
 }
 
 .info {
@@ -50,11 +50,11 @@ header {
     width: 90%;
     font-size: 30px;
     padding-left: 20px;
-    text-shadow: 0px 0px 5px rgb(55, 182, 255);
+    text-shadow: 0px 0px 5px aqua;
 }
 
 .text {
-    color: rgb(55, 182, 255);
+    color: aqua;
 }
 
 .content {
@@ -69,7 +69,7 @@ header {
     padding-bottom: 20%;
     /* margin-top: 5%; */
     border: 5px solid rgb(255, 255, 255);
-    box-shadow: 0px 5px 50px rgb(55, 182, 255);
+    box-shadow: 0px 5px 20px aqua;
     border-radius: 25%;
     color: wheat;
     background-image: url(https://media.licdn.com/dms/image/v2/D4D03AQF1vojvjaCMhA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1697522789899?e=2147483647&v=beta&t=faHLiQh9bL_tnH3MEghcwHqztqCbXJn5KHTSHxtAASY);
@@ -86,7 +86,7 @@ header {
 
 .navbar:hover {
     transform: scale(1.3);
-    text-shadow: 0px 0px 5px rgb(55, 182, 255);
+    text-shadow: 0px 0px 5px aqua;
 }
 
 #intro {
@@ -102,19 +102,22 @@ header {
     font-weight: 600;
     font-size: 18px;
     font-family: cursive;
-    color: white;
-    border: none;
+    color: rgb(255, 255, 255);
+    border: 2px solid aqua;
     margin-left: 20%;
     margin-top: 10%;
-    border-radius: 20px;
-    background-color: rgb(55, 182, 255);
-    box-shadow: 0px 0px 20px rgb(55, 182, 255);
+    border-radius: 10px;
+    background-color: transparent;
+}
+#btn1:hover{
+    box-shadow: 0px 0px 10px aqua;
+
 }
 
 .info i {
     margin-left: 22%;
     margin-top: 5%;
-    color: rgb(55, 182, 255);
+    color: aqua;
     font-size: 40px;
 }
 
@@ -132,7 +135,7 @@ header {
     padding-bottom: 20%;
     margin-top: 5%;
     border: 5px solid rgb(255, 255, 255);
-    box-shadow: 0px 5px 50px rgb(55, 182, 255);
+    box-shadow: 0px 5px 50px aqua;
     border-radius: 25%;
     margin-left: 10%;
     color: rgb(255, 255, 255);
@@ -160,7 +163,7 @@ header {
 }
 
 .about-text span {
-    color: rgb(55, 182, 255)
+    color: aqua
 }
 
 #btn2 {
@@ -168,13 +171,15 @@ header {
     font-weight: 600;
     font-size: 18px;
     font-family: cursive;
-    color: white;
-    border: none;
+    color: rgb(255, 255, 255);
+    border: 2px solid aqua;
     margin-left: 10%;
     margin-top: 5%;
-    border-radius: 20px;
-    background-color: rgb(55, 182, 255);
-    box-shadow: 0px 0px 20px rgb(55, 182, 255);
+    border-radius: 10px;
+    background-color: transparent;
+}
+#btn2:hover{
+    box-shadow: 0px 0px 10px aqua;
 }
 
 .sub-tittle {
@@ -185,7 +190,7 @@ header {
 }
 
 .sub-tittle span {
-    color: rgb(55, 182, 255);
+    color: aqua;
 }
 
 .service-list {
@@ -200,7 +205,8 @@ header {
     width: 20%;
     height: 20rem;
     padding: 2rem;
-    box-shadow: 2px 2px 30px rgb(55, 182, 255);
+    border: 2px solid white;
+    /* box-shadow: 2px 2px 30px aqua; */
     border-radius: 20px;
 }
 
@@ -222,13 +228,17 @@ header {
     font-weight: 600;
     font-size: 1rem;
     font-family: cursive;
-    color: white;
-    border: none;
+    color: rgb(255, 255, 255);
+    border: 2px solid aqua;
     margin-left: 30%;
     margin-top: 10%;
-    border-radius: 20px;
-    background-color: rgb(55, 182, 255);
-    box-shadow: 0px 0px 20px rgb(55, 182, 255);
+    border-radius: 10px;
+    background-color: transparent;
+}
+#btn3:hover{
+    box-shadow: 0px 0px 5px rgb(251, 255, 255);
+    background-color: rgb(10, 103, 103);
+
 }
 
 #section {
@@ -242,26 +252,153 @@ header {
     padding: 75px 90px;
     margin-left: 120px;
 }
+/* Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
 
-@media (max-width: 768px) {
-    .content {
+    /* NAVBAR */
+    #nav {
         flex-direction: column;
-        align-items: center;
+        gap: 15px;
+        font-size: 16px;
+        padding: 15px;
+        margin: 20px;
     }
 
-    .photo {
-        margin: 20px 0;
-        width: 80%;
-        height: 300px;
+    #scl {
+        width: 60%;
+        justify-content: space-between;
+    }
+
+    .navbar:hover {
+        transform: scale(1.1);
+    }
+
+    /* HERO SECTION */
+    .content {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .info {
+        margin-left: 0;
+    }
+
+    #name {
+        font-size: 40px;
+    }
+
+    #name_para {
+        font-size: 20px;
+        padding-left: 0;
     }
 
     #intro {
         width: 90%;
-        margin-left: 0;
-
+        margin-left: auto;
+        margin-right: auto;
     }
 
+    #btn1 {
+        margin-left: 0;
+    }
+
+    .info i {
+        margin-left: 0;
+    }
+
+    .photo {
+        width: 250px;
+        height: 250px;
+        padding-bottom: 0;
+        margin: 25px auto;
+    }
+
+    /* ABOUT SECTION */
+    .about {
+        grid-template-columns: 1fr;
+        margin: 5% 5%;
+        text-align: center;
+    }
+
+    .about-img img {
+        width: 80%;
+        height: 250px;
+        margin-left: 0;
+        padding-bottom: 0;
+    }
+
+    .about-text p {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #btn2 {
+        margin-left: 0;
+    }
+
+    /* SERVICES */
+    .sub-tittle {
+        margin-left: 0;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .service-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .service-list div {
+        width: 80%;
+        height: auto;
+    }
+
+    #btn3 {
+        margin-left: 0;
+    }
+
+    /* SKILLS SECTION */
+    #section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container1 {
+        width: 90%;
+        margin-left: 0;
+        padding: 20px;
+        height: auto;
+    }
+
+    .circle-box {
+        margin: 20px 0;
+    }
+
+    /* CONTACT US */
+    #contect-main {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #cnt-img img {
+        width: 250px;
+        height: 250px;
+    }
+
+    #cnt-form {
+        width: 100%;
+        text-align: center;
+    }
+
+    input,
+    #message textarea,
+    #submit-btn {
+        width: 90%;
+    }
 }
+
 
 .heading1 {
     text-align: center;
@@ -539,7 +676,80 @@ input {
     border-radius: 5px;
 }
 #submit-btn:hover{
-    background-color: rgba(0,225,225,.5);
-        box-shadow: 0px 0px 20px rgb(55, 182, 255);
+    background-color: rgb(26, 29, 29);
+        box-shadow: 1px 1px 10px aqua;
 
+}
+.Education-section{
+    padding: 50px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap : 20px;
+}
+.Education-title{
+   font-family: helvetica;
+   padding : 0px 0px 20px 30px ;
+}
+.Education-title h2{
+    color : aqua;
+}
+.col .Education-container{
+    padding : 0px 30px;
+    border-left : 2px solid aqua;
+}
+.col .Education-container .Education-box{
+    position : relative;
+    padding : 20px;
+    border : 1px solid #001d2d;
+    background-color: #000000;
+    cursor : pointer;
+    transition : all 0.4s;
+    margin-bottom: 20px;
+}
+.col .Education-container .Education-box:hover{
+box-shadow : 0px 3px 12px 0px aqua;
+border : 1px solid transparent;
+}
+.service-list div:hover{
+box-shadow : 0px 3px 12px 0px aqua;
+border : 1px solid transparent;
+}
+.col .Education-container .Education-box:before{
+    content: '';
+    position : absolute;
+    width : 16px;
+    height: 16px;
+    border-radius : 50%;
+    right : calc(100% + 22px);
+    Top : 0;
+    background-color: aqua;
+    border : 2px solid white;
+}
+.Education-box h4{
+    position : relative;
+    color : rgb(255, 255, 255);
+}
+.Education-box h3{
+    font-size: 19px;
+    padding : 10px 0px 6px;
+    font-family: Helvetica;
+    color : aqua;
+}
+.Education-box p{
+    line-height: 1.2rem;
+    color : white;
+    font-size: 17px;
+}
+@media (max-width : 480px) {
+    .row{
+        grid-template-columns: 1fr;
+    }
+    .row .col:nth-child(2){
+        margin-top:30px;
+    }
 }
