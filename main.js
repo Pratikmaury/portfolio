@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 window.addEventListener('scroll', function () {
   const stickyElement = document.getElementById('header');
-  const stopStickyAt = 2000; // px from top where sticky ends
+  const stopStickyAt = 1000; // px from top where sticky ends
 
   if (window.scrollY > stopStickyAt) {
     stickyElement.style.position = 'static'; // remove sticky
